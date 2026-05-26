@@ -3,14 +3,17 @@ package net.indigo.ufm.mixin;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.gen.NoiseGenerator;
 import net.minecraft.world.gen.class_1779;
+import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Overwrite;
 import org.spongepowered.asm.mixin.Shadow;
 
+import java.util.Arrays;
+
 @Mixin(NoiseGenerator.class)
 public class NoiseGeneratorMixin{
-	@Shadow private int field_111;
-	@Shadow private class_1779[] field_7557;
+    @Shadow @Final private int field_111;
+	@Shadow @Final private class_1779[] field_7557;
 
 	/**
 	 * @author Indigo227
@@ -21,9 +24,7 @@ public class NoiseGeneratorMixin{
 		if (ds == null) {
 			ds = new double[l * m * n];
 		} else {
-			for (int o = 0; o < ds.length; o++) {
-				ds[o] = 0.0;
-			}
+            Arrays.fill(ds, 0.0);
 		}
 
 		double g = 1.0;
