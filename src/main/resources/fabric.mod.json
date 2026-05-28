@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
   "id": "ufm",
-  "version": "0.2",
+  "version": "0.2.1",
   "name": "Universal Farlands Mod",
-  "description": "The Universal Farlands Mod developed for all versions up to 1.3",
+  "description": "The Universal Farlands Mod developed for all versions up to 1.3.2",
   "authors": [
     "Indigo227"
   ],
