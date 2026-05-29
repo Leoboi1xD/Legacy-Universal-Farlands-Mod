@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "ufm",
-  "version": "0.2.1",
+  "version": "0.2.1-1.4.7",
   "name": "Universal Farlands Mod",
   "description": "The Universal Farlands Mod developed for all versions up to 1.3.2",
   "authors": [
@@ -24,7 +24,7 @@
   ],
   "depends": {
     "fabricloader": ">=0.16.0",
-    "minecraft": "1.3.2"
+    "minecraft": "1.4.7"
   },
   "suggests": {
     "another-mod": "*"
